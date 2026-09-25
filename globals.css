@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rezona-dark: #0a0a0c;
+  --color-rezona-card: #141418;
+  --color-rezona-border: #2a2a32;
+  --color-rezona-orange: #ff6b2b;
+  --color-rezona-orange-hover: #e55a1f;
+  --color-rezona-text: #e2e2e8;
+  --color-rezona-muted: #8b8b99;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body { background-color: var(--color-rezona-dark); color: var(--color-rezona-text); font-family: var(--font-sans); overflow-x: hidden; }
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: var(--color-rezona-dark); }
+  ::-webkit-scrollbar-thumb { background: var(--color-rezona-border); border-radius: 4px; }
+}
